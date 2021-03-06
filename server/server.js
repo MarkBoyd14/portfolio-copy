@@ -3,6 +3,7 @@ const app = express(); // create express app
 const path = require('path');
 const publicPath = path.join(__dirname, '../build');
 const routes = require('./routes.js');
+const port = process.env.PORT || 3000;
 
 app.use('/api', routes);
 
@@ -13,6 +14,6 @@ app.get('*', (req, res) => {
 });
 
 // start express server on port 5000
-app.listen(5000, () => {
-  console.log('server started on port 5000');
+app.listen(port, () => {
+  console.log('Server is up!');
 });
