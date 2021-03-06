@@ -1,7 +1,7 @@
 const viewPath = 'pages';
 
 exports.about = (req, res) => {
-  res.render(`${viewPath}/`);
+  res.render(`${viewPath}/about`);
 };
 
 exports.resume = (req, res) => {

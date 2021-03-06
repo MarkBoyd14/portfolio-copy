@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import Header from './components/Header';
 import Resume from './pages/Resume';
 import About from './pages/About';
@@ -31,6 +31,9 @@ function App() {
           </Route>
           <Route path="/contact">
             <Contact />
+          </Route>
+          <Route path="/about">
+            <Redirect to="/" />
           </Route>
           <Route path="/" exact>
             <About />
