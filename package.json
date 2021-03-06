@@ -23,7 +23,7 @@
   },
   "scripts": {
     "dev": "react-scripts start",
-    "start": "nodemon server/server.js",
+    "start": "node server/server.js",
     "build": "react-scripts build",
     "deploy": "aws s3 sync build/ s3://markboyd.ca --acl public-read",
     "test": "react-scripts test",
